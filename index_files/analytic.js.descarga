@@ -1,0 +1,19 @@
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+
+ gtag('config', AnalitycTrackingId);
+
+
+//  gtag('config', 'G-MTHFJWNSM8');
+//  gtag('config', 'AW-877326291');
+
+
+
+ 
+
+
+ 
+
+            
